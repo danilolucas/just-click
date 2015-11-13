@@ -1,1 +1,1 @@
-# just-click-android
+# Just Click (Android Game)
