@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="@drawable/gray">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="160dip"
+            android:layout_height="150dip"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textViewCenter"
+            android:background="@drawable/green" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="160dip"
+            android:layout_height="150dip"
+            android:layout_above="@+id/Button4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Button1"
+            android:background="@drawable/blue" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="160dip"
+            android:layout_height="150dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/Button1"
+            android:layout_below="@+id/Button2"
+            android:background="@drawable/orange" />
+
+        <Button
+            android:id="@+id/Button4"
+            android:layout_width="160dip"
+            android:layout_height="150dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewCenter"
+            android:layout_toRightOf="@+id/Button3"
+            android:background="@drawable/red" />
+
+        <TextView
+            android:id="@+id/textViewCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Button1"
+            android:layout_alignBottom="@+id/Button1"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button5"
+            android:layout_alignBottom="@+id/button5"
+            android:layout_toLeftOf="@+id/textView1"
+            android:visibility="invisible"
+            android:text="Score" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCenter"
+            android:layout_marginTop="73dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:visibility="invisible"
+            android:text="Again" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button6"
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignTop="@+id/Button3"
+            android:text="Play" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo" />
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Button3"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:text="Chronometer" />
+
+    </RelativeLayout>
+
+</ViewFlipper>
